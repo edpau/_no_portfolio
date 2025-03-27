@@ -145,7 +145,25 @@ body {
 }
 
 .main {
-  padding: 82px 51px 81px 51px;
+  padding: 82px 0;
+}
+
+.section {
+  width: 326px;
+  margin: 0 auto;
+  padding-top: 116px;
+}
+.section__heading {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+}
+.section__text {
+  padding-top: 47px;
+  font-size: 1.125rem;
+}
+.section__text--technical {
+  text-align: center;
 }
 
 .intro__name {
@@ -159,4 +177,31 @@ body {
 }
 .intro__image-container {
   display: none;
+}
+
+.about-me__image {
+  max-width: 300px;
+  height: auto;
+  padding-top: 47px;
+  margin: 0 auto;
+}
+
+.skills-box {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-top: 50px;
+}
+.skills-box__item {
+  justify-self: center;
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.skills-box__text {
+  width: 100%;
+  text-align: center;
+  padding-top: 21px;
+  padding-bottom: 25px;
 }

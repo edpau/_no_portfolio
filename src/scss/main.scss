@@ -3,7 +3,32 @@
 @use './accessibility';
 
 .main {
-    padding: 82px 51px 81px 51px;
+    padding: 82px 0;
+}
+
+.section {
+    width: 326px;
+    margin: 0 auto;
+    padding-top: 116px;
+
+    // &--about-me{
+    //     padding-top: 116px;
+    // }
+
+    &__heading {
+        font-size: 2rem;
+        font-weight: 600;
+        text-align: center;
+    }
+
+    &__text {
+        padding-top: 47px;
+        font-size: 1.125rem;
+
+        &--technical{
+            text-align: center;
+        }
+    }
 }
 
 .intro {
@@ -22,4 +47,37 @@
     &__image-container{
         display: none;
     }
+}
+
+.about-me {
+   
+    &__image {
+        max-width: 300px;
+        height: auto;
+        padding-top: 47px;
+        margin: 0 auto;
+    }
+}
+
+.skills-box {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 50px;
+
+    &__item{
+        justify-self: center;
+        width: 90px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__text{
+        width: 100%;
+        text-align: center;
+        padding-top: 21px;
+        padding-bottom: 25px;
+    }
+
 }
