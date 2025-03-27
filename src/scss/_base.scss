@@ -1,0 +1,9 @@
+@use "./variables" as vars;
+
+body {
+    font-family: vars.$font-primary;
+    font-size: vars.$font-size;
+    font-weight: vars.$font-weight;
+    background-color: var(--color-bg);
+}
+

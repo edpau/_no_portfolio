@@ -1,0 +1,24 @@
+$font-primary: "Inter", sans-serif;
+$font-secondary: "Oxygen mono", monospace;
+$font-size: 1rem;
+$font-weight: 400;
+
+$color-heading-light: black;
+$color-text-light: black;
+$color-bg-light: white;
+
+$color-heading-dark: white;
+$color-text-dark: white;
+$color-bg-dark: black;
+
+:root {
+  --color-heading: #{$color-heading-light};
+  --color-text: #{$color-text-light};
+  --color-bg: #{$color-bg-light};
+}
+
+[data-theme="dark"] {
+  --color-heading: #{$color-heading-dark};
+  --color-text: #{$color-text-dark};
+  --color-bg: #{$color-bg-dark};
+}

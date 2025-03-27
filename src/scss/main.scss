@@ -1,0 +1,25 @@
+@use './reset.scss';
+@use './base';
+@use './accessibility';
+
+.main {
+    padding: 82px 51px 81px 51px;
+}
+
+.intro {
+    
+    &__name{
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    &__job{
+        font-size: 4rem;
+        font-weight: 600;
+        padding-top: 65px;
+    }
+
+    &__image-container{
+        display: none;
+    }
+}
