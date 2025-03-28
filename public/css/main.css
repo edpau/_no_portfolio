@@ -116,6 +116,9 @@ textarea:not([rows]) {
   --color-text: black;
   --color-bg: white;
   --card-imageBg: #e2f6f5;
+  --color-footerBg: black;
+  --color-footerText: white;
+  --color-footerSvg: black;
 }
 
 [data-theme=dark] {
@@ -123,6 +126,9 @@ textarea:not([rows]) {
   --color-text: white;
   --color-bg: black;
   --card-imageBg: #e2f6f5;
+  --color-footerBg: white;
+  --color-footerText: black;
+  --color-footerSvg: white;
 }
 
 body {
@@ -130,6 +136,19 @@ body {
   font-size: 1rem;
   font-weight: 400;
   background-color: var(--color-bg);
+}
+
+p {
+  color: var(--color-text);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--color-heading);
 }
 
 .sr-only {
@@ -252,4 +271,38 @@ body {
 }
 .project-card__button--last {
   margin-left: 23px;
+}
+
+.footer {
+  background-color: var(--color-footerBg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 53px;
+}
+.footer__links {
+  display: flex;
+  margin-top: 54px;
+}
+.footer__link {
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border-radius: 999px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer__link:not(:first-of-type) {
+  margin-left: 11px;
+}
+.footer__svg {
+  color: var(--color-footerSvg);
+}
+.footer__para {
+  color: var(--color-footerText);
+  display: inline-block;
+  margin-top: 32px;
 }

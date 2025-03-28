@@ -129,3 +129,39 @@
     }
   }
 }
+
+.footer {
+  background-color: var(--color-footerBg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 53px;
+  &__links {
+    display: flex;
+    margin-top: 54px;
+  }
+  &__link {
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__link:not(:first-of-type){
+    margin-left: 11px;
+  }
+
+  &__svg {
+    color: var(--color-footerSvg);
+  }
+  &__para {
+    color: var(--color-footerText);
+    display: inline-block;
+    margin-top: 32px;
+  }
+}
