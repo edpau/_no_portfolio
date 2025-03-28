@@ -53,7 +53,7 @@
   justify-content: space-between;
   align-items: center;
 
-  // for toggleThemeBtn next to Edward Pau 
+  // for toggleThemeBtn next to Edward Pau
   &__header {
     display: flex;
     gap: 20px;
@@ -64,6 +64,10 @@
     color: var(--color-text);
     font-family: vars.$font-secondary;
     font-size: 1.5rem;
+    transition: color 0.3s ease;
+    &:hover {
+      color: var(--color-hover);
+    }
   }
 
   &__list {
@@ -79,6 +83,10 @@
   &__link {
     text-decoration: none;
     color: var(--color-text);
+    transition: color 0.3s ease;
+    &:hover {
+      color: var(--color-hover);
+    }
 
     &--email {
       font-size: 1rem;
@@ -288,6 +296,11 @@
     padding-top: 21px;
     padding-bottom: 25px;
   }
+
+  &__svg {
+    color: var(--color-skillsSvg);
+  }
+
   @include media.respond-lg {
     grid-template-columns: repeat(9, 1fr);
   }
@@ -355,6 +368,11 @@
     border: 1px solid black;
     padding: 10px 19px;
     border-radius: 7px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    &:hover {
+      color: var(--color-hover);
+    }
     &--last {
       margin-left: 23px;
     }
@@ -395,6 +413,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
+    transition: color 0.3s ease;
   }
 
   &__link:not(:first-of-type) {
@@ -403,6 +423,9 @@
 
   &__svg {
     color: var(--color-footerSvg);
+    &:hover {
+      color: var(--color-hover);
+    }
   }
   &__para {
     color: var(--color-footerText);

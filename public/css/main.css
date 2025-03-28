@@ -117,10 +117,12 @@ textarea:not([rows]) {
   --color-bg: white;
   --color-navBg: white;
   --card-imageBg: #e2f6f5;
+  --color-skillsSvg: black;
   --color-footerBg: black;
   --color-footerText: white;
   --color-footerSvgBg: white;
   --color-footerSvg: black;
+  --color-hover: orange;
 }
 
 [data-theme=dark] {
@@ -129,10 +131,12 @@ textarea:not([rows]) {
   --color-bg: black;
   --color-navBg: black;
   --card-imageBg: grey;
+  --color-skillsSvg: white;
   --color-footerBg: white;
   --color-footerText: black;
   --color-footerSvgBg: black;
   --color-footerSvg: white;
+  --color-hover: grey;
 }
 
 body {
@@ -223,6 +227,10 @@ h6 {
   color: var(--color-text);
   font-family: "Oxygen mono", monospace;
   font-size: 1.5rem;
+  transition: color 0.3s ease;
+}
+.nav__header-link:hover {
+  color: var(--color-hover);
 }
 .nav__list {
   display: flex;
@@ -235,6 +243,10 @@ h6 {
 .nav__link {
   text-decoration: none;
   color: var(--color-text);
+  transition: color 0.3s ease;
+}
+.nav__link:hover {
+  color: var(--color-hover);
 }
 .nav__link--email {
   font-size: 1rem;
@@ -421,6 +433,9 @@ h6 {
   padding-top: 21px;
   padding-bottom: 25px;
 }
+.skills-box__svg {
+  color: var(--color-skillsSvg);
+}
 @media (min-width: 1024px) {
   .skills-box {
     grid-template-columns: repeat(9, 1fr);
@@ -483,6 +498,11 @@ h6 {
   border: 1px solid black;
   padding: 10px 19px;
   border-radius: 7px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.project-card__button:hover {
+  color: var(--color-hover);
 }
 .project-card__button--last {
   margin-left: 23px;
@@ -525,12 +545,17 @@ h6 {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
+  transition: color 0.3s ease;
 }
 .footer__link:not(:first-of-type) {
   margin-left: 11px;
 }
 .footer__svg {
   color: var(--color-footerSvg);
+}
+.footer__svg:hover {
+  color: var(--color-hover);
 }
 .footer__para {
   color: var(--color-footerText);
