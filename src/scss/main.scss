@@ -16,7 +16,6 @@
   width: 100%;
   padding-top: 47px;
   padding-bottom: 10px;
-  background-color: white;
 
   @include media.respond-md {
     display: block;
@@ -24,6 +23,15 @@
     &__content {
       margin: 0 auto;
       max-width: 700px;
+    }
+
+    &__themeToggle {
+      background: none;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
 
@@ -44,6 +52,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  // for toggleThemeBtn next to Edward Pau 
+  &__header {
+    display: flex;
+    gap: 20px;
+  }
 
   &__header-link {
     text-decoration: none;
@@ -376,7 +390,7 @@
   &__link {
     width: 45px;
     height: 45px;
-    background-color: white;
+    background-color: var(--color-footerSvgBg);
     border-radius: 999px;
     display: flex;
     justify-content: center;

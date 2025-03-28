@@ -15,12 +15,14 @@ $color-text-dark: white;
 $color-bg-dark: black;
 
 $card-imageBg-light: #e2f6f5;
-$card-imageBg-dark: #e2f6f5;
+$card-imageBg-dark: grey;
 
 $color-footerBg-light: black;
 $color-footerBg-dark: white;
 $color-footerText-light: white;
 $color-footerText-dark: black;
+$color-footerSvgBg-light: white;
+$color-footerSvgBg-dark: black;
 $color-footerSvg-light: black;
 $color-footerSvg-dark: white;
 
@@ -36,6 +38,7 @@ $color-footerSvg-dark: white;
 
   --color-footerBg: #{$color-footerBg-light};
   --color-footerText: #{$color-footerText-light};
+  --color-footerSvgBg: #{$color-footerSvgBg-light};
   --color-footerSvg: #{$color-footerSvg-light};
 }
 
@@ -51,5 +54,6 @@ $color-footerSvg-dark: white;
 
   --color-footerBg: #{$color-footerBg-dark};
   --color-footerText: #{$color-footerText-dark};
+  --color-footerSvgBg: #{$color-footerSvgBg-dark};
   --color-footerSvg: #{$color-footerSvg-dark};
 }

@@ -119,6 +119,7 @@ textarea:not([rows]) {
   --card-imageBg: #e2f6f5;
   --color-footerBg: black;
   --color-footerText: white;
+  --color-footerSvgBg: white;
   --color-footerSvg: black;
 }
 
@@ -127,9 +128,10 @@ textarea:not([rows]) {
   --color-text: white;
   --color-bg: black;
   --color-navBg: black;
-  --card-imageBg: #e2f6f5;
+  --card-imageBg: grey;
   --color-footerBg: white;
   --color-footerText: black;
+  --color-footerSvgBg: black;
   --color-footerSvg: white;
 }
 
@@ -178,7 +180,6 @@ h6 {
   width: 100%;
   padding-top: 47px;
   padding-bottom: 10px;
-  background-color: white;
 }
 @media (min-width: 768px) {
   .header {
@@ -187,6 +188,14 @@ h6 {
   .header__content {
     margin: 0 auto;
     max-width: 700px;
+  }
+  .header__themeToggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (min-width: 1024px) {
@@ -204,6 +213,10 @@ h6 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.nav__header {
+  display: flex;
+  gap: 20px;
 }
 .nav__header-link {
   text-decoration: none;
@@ -507,7 +520,7 @@ h6 {
 .footer__link {
   width: 45px;
   height: 45px;
-  background-color: white;
+  background-color: var(--color-footerSvgBg);
   border-radius: 999px;
   display: flex;
   justify-content: center;
