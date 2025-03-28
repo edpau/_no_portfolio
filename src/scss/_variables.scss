@@ -11,14 +11,19 @@ $color-heading-dark: white;
 $color-text-dark: white;
 $color-bg-dark: black;
 
+$card-imageBg-light: #e2f6f5;
+$card-imageBg-dark: #e2f6f5;
+
 :root {
   --color-heading: #{$color-heading-light};
   --color-text: #{$color-text-light};
   --color-bg: #{$color-bg-light};
+  --card-imageBg: #{$card-imageBg-light};
 }
 
 [data-theme="dark"] {
   --color-heading: #{$color-heading-dark};
   --color-text: #{$color-text-dark};
   --color-bg: #{$color-bg-dark};
+  --card-imageBg: #{$card-imageBg-dark};
 }
