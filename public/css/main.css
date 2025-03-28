@@ -165,14 +165,15 @@ h6 {
   white-space: nowrap !important;
 }
 
-.main {
-  padding: 82px 0;
-}
-
 .section {
   width: 373px;
   margin: 0 auto;
   padding-top: 116px;
+}
+.section--intro {
+  padding-top: 82px;
+  width: 326px;
+  margin: 0 auto 30px auto;
 }
 .section__heading {
   font-size: 2rem;
@@ -281,6 +282,7 @@ h6 {
   align-items: center;
   width: 100%;
   padding-bottom: 53px;
+  margin-top: 81px;
 }
 .footer__links {
   display: flex;
