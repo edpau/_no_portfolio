@@ -166,7 +166,7 @@ h6 {
 }
 
 .section {
-  width: 373px;
+  width: 320px;
   margin: 0 auto;
   padding-top: 116px;
 }
@@ -187,6 +187,45 @@ h6 {
 .section__text--technical {
   text-align: center;
 }
+@media (min-width: 375px) {
+  .section {
+    width: 368px;
+  }
+}
+@media (min-width: 576px) {
+  .section {
+    width: 500px;
+  }
+  .section--intro {
+    width: 480px;
+  }
+}
+@media (min-width: 768px) {
+  .section {
+    width: 690px;
+  }
+}
+@media (min-width: 1024px) {
+  .section {
+    width: 900px;
+  }
+  .section--skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .section__heading--technical {
+    width: 358px;
+  }
+  .section__text--technical {
+    width: 484px;
+  }
+}
+@media (min-width: 1280px) {
+  .section {
+    width: 1100px;
+  }
+}
 
 .intro__name {
   font-size: 1.25rem;
@@ -195,10 +234,34 @@ h6 {
 .intro__job {
   font-size: 4rem;
   font-weight: 600;
-  padding-top: 65px;
+  margin-top: 65px;
 }
 .intro__image-container {
   display: none;
+}
+@media (min-width: 576px) {
+  .intro {
+    text-align: center;
+  }
+}
+@media (min-width: 1024px) {
+  .intro {
+    text-align: left;
+    display: flex;
+    align-items: center;
+  }
+  .intro__name {
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .intro__job {
+    font-size: 4rem;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  .intro__image-container {
+    display: block;
+  }
 }
 
 .about-me__image {
@@ -206,6 +269,48 @@ h6 {
   height: auto;
   padding-top: 47px;
   margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .about-me {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 0.2fr 0.2fr 1fr 1fr 1fr;
+  }
+  .about-me__image-container {
+    grid-column: 1/5;
+    grid-row: 1/6;
+    overflow: hidden;
+  }
+  .about-me__heading {
+    grid-column: 6/9;
+    grid-row: 1/2;
+    text-align: left;
+  }
+  .about-me__text {
+    grid-column: 6/13;
+    grid-row: 2/6;
+  }
+  .about-me__image {
+    width: 100%;
+    height: auto;
+    padding-top: 0px;
+  }
+}
+@media (min-width: 1024px) {
+  .about-me__image-container {
+    grid-column: 1/5;
+    grid-row: 1/6;
+    overflow: hidden;
+  }
+  .about-me__heading {
+    grid-column: 6/9;
+    grid-row: 2/3;
+    text-align: left;
+  }
+  .about-me__text {
+    grid-column: 6/13;
+    grid-row: 3/6;
+  }
 }
 
 .skills-box {
@@ -227,25 +332,45 @@ h6 {
   padding-top: 21px;
   padding-bottom: 25px;
 }
+@media (min-width: 1024px) {
+  .skills-box {
+    grid-template-columns: repeat(9, 1fr);
+  }
+}
 
 .projects__container {
   margin-top: 28px;
   display: grid;
-  gap: 64px;
+  row-gap: 64px;
+}
+@media (min-width: 768px) {
+  .projects__container {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 10px;
+  }
 }
 
+.project-card {
+  width: 300px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .project-card__imageBg {
-  width: 100%;
   height: 305px;
   background-color: var(--card-imageBg);
   display: flex;
   align-items: end;
+  padding-left: 25px;
 }
 .project-card__image {
   border-radius: 6px 6px 0 0;
-  width: 330px;
+  width: 100%;
   height: 225px;
-  margin-left: 25px;
+}
+.project-card__text-content {
+  text-align: left;
 }
 .project-card__framework {
   margin-top: 39px;
@@ -273,6 +398,21 @@ h6 {
 .project-card__button--last {
   margin-left: 23px;
 }
+@media (min-width: 375px) {
+  .project-card {
+    width: 375px;
+  }
+}
+@media (min-width: 768px) {
+  .project-card {
+    width: 340px;
+  }
+}
+@media (min-width: 1024px) {
+  .project-card {
+    width: 440px;
+  }
+}
 
 .footer {
   background-color: var(--color-footerBg);
@@ -281,12 +421,12 @@ h6 {
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding-top: 54px;
   padding-bottom: 53px;
   margin-top: 81px;
 }
 .footer__links {
   display: flex;
-  margin-top: 54px;
 }
 .footer__link {
   width: 45px;
@@ -307,4 +447,30 @@ h6 {
   color: var(--color-footerText);
   display: inline-block;
   margin-top: 32px;
+}
+@media (min-width: 768px) {
+  .footer {
+    padding: 45px 87px 65px 119px;
+  }
+  .footer__content {
+    width: 100%;
+    max-width: 900px;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .footer__para {
+    margin-top: 0;
+  }
+}
+@media (min-width: 1024px) {
+  .footer__content {
+    max-width: 1100px;
+  }
+}
+@media (min-width: 1280px) {
+  .footer__content {
+    max-width: 1300px;
+  }
 }
