@@ -20,40 +20,42 @@
     />
   </head>
   <body>
-    <header hidden class="header">
-      <nav class="nav">
-        <h2 class="nav__header">
-          <a class="nav__header-link" href="index.html"> Edward Pau </a>
-        </h2>
-        <!-- mobile use -->
-        <button
-          class="nav__button"
-          aria-controls="main-nav-list"
-          aria-expanded="false"
-          aria-label="Menu"
-          hidden
-        ></button>
-        <ul class="nav__list">
-          <li class="nav__list-item">
-            <a class="nav__link" href="#home">Home</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="nav__link" href="#about">About</a>
-          </li>
-          <li class="nav__list-item">
-            <a class="nav__link" href="#projects">Projects</a>
-          </li>
-          <li class="nav__list-item">
-            <a
-              class="nav__link nav__link--email"
-              href="mailto:edpauuk@gmail.com"
-              >Get in Touch</a
-            >
-          </li>
-        </ul>
-      </nav>
+    <header class="header">
+      <div class="header__content">
+        <nav class="nav">
+          <h2 class="nav__header">
+            <a class="nav__header-link" href="index.html"> Edward Pau </a>
+          </h2>
+          <!-- mobile use -->
+          <button
+            class="nav__button"
+            aria-controls="main-nav-list"
+            aria-expanded="false"
+            aria-label="Menu"
+            hidden
+          ></button>
+          <ul class="nav__list">
+            <li class="nav__list-item">
+              <a class="nav__link" href="#home">Home</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#about">About</a>
+            </li>
+            <li class="nav__list-item">
+              <a class="nav__link" href="#projects">Projects</a>
+            </li>
+            <li class="nav__list-item">
+              <a
+                class="nav__link nav__link--email"
+                href="mailto:edpauuk@gmail.com"
+                >Get in Touch</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
-    <main class="main">
+    <main id="home" class="main">
       <section class="section section--intro">
         <div class="intro">
           <div class="intro__text">
@@ -73,7 +75,7 @@
         </div>
       </section>
       <section class="section section--about-me about-me">
-        <h2 class="section__heading about-me__heading">About Me</h2>
+        <h2 id="about" class="section__heading about-me__heading">About Me</h2>
         <div class="about-me__image-container">
           <img
             class="about-me__image"
@@ -99,7 +101,9 @@
         </p>
       </section>
       <section class="section section--skills">
-        <h2 class="section__heading section__heading--technical">Technical Skills</h2>
+        <h2 class="section__heading section__heading--technical">
+          Technical Skills
+        </h2>
         <p class="section__text section__text--technical">
           I have experience working with both front-end and back-end
           technologies, building responsive and accessible web applications.
@@ -270,7 +274,7 @@
         </div>
       </section>
       <section class="section projects">
-        <h2 class="section__heading">My Projects</h2>
+        <h2 id="projects" class="section__heading">My Projects</h2>
         <div class="projects__container">
           <article class="project-card">
             <div class="project-card__imageBg">

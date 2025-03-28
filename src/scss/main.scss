@@ -2,6 +2,84 @@
 @use "./base";
 @use "./accessibility";
 @use "./media";
+@use "./variables" as vars;
+
+.header {
+  background-color: var(--color-navBg);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+
+  position: fixed;
+  display: none;
+  width: 100%;
+  padding-top: 47px;
+  padding-bottom: 10px;
+  background-color: white;
+
+  @include media.respond-md {
+    display: block;
+
+    &__content {
+      margin: 0 auto;
+      max-width: 700px;
+    }
+  }
+
+  @include media.respond-lg {
+    &__content {
+      max-width: 900px;
+    }
+  }
+
+  @include media.respond-xl {
+    &__content {
+      max-width: 1100px;
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__header-link {
+    text-decoration: none;
+    color: var(--color-text);
+    font-family: vars.$font-secondary;
+    font-size: 1.5rem;
+  }
+
+  &__list {
+    display: flex;
+    list-style-type: none;
+    font-size: 1.125rem;
+  }
+
+  &__list-item:not(:first-of-type) {
+    margin-left: 40px;
+  }
+
+  &__link {
+    text-decoration: none;
+    color: var(--color-text);
+
+    &--email {
+      font-size: 1rem;
+      border: 1px solid var(--color-text);
+      padding: 4px 11px;
+      border-radius: 7px;
+    }
+  }
+
+  @include media.respond-lg {
+    &__list-item:not(:first-of-type) {
+      margin-left: 55px;
+    }
+  }
+}
 
 .section {
   width: 320px;
@@ -48,15 +126,15 @@
   @include media.respond-lg {
     width: 900px;
 
-    &--skills{
+    &--skills {
       display: flex;
       flex-direction: column;
       align-items: center;
     }
 
     &__heading {
-      &--technical{
-        width: 358px
+      &--technical {
+        width: 358px;
       }
     }
     &__text {
@@ -312,16 +390,14 @@
   }
 
   @include media.respond-md {
-    
     padding: 45px 87px 65px 119px;
     &__content {
-      
       width: 100%;
       max-width: 900px;
       display: flex;
       flex-direction: row-reverse;
-    justify-content: space-between;
-    align-items: center;
+      justify-content: space-between;
+      align-items: center;
     }
     &__para {
       margin-top: 0;
@@ -330,13 +406,13 @@
 
   @include media.respond-lg {
     &__content {
-    max-width: 1100px;
+      max-width: 900px;
     }
   }
 
   @include media.respond-xl {
     &__content {
-    max-width: 1300px;
+      max-width: 1100px;
     }
   }
 }

@@ -3,6 +3,9 @@ $font-secondary: "Oxygen mono", monospace;
 $font-size: 1rem;
 $font-weight: 400;
 
+$color-navBg-light: white;
+$color-navBg-dark: black;
+
 $color-heading-light: black;
 $color-text-light: black;
 $color-bg-light: white;
@@ -24,8 +27,13 @@ $color-footerSvg-dark: white;
 :root {
   --color-heading: #{$color-heading-light};
   --color-text: #{$color-text-light};
+
   --color-bg: #{$color-bg-light};
+
+  --color-navBg: #{$color-navBg-light};
+
   --card-imageBg: #{$card-imageBg-light};
+
   --color-footerBg: #{$color-footerBg-light};
   --color-footerText: #{$color-footerText-light};
   --color-footerSvg: #{$color-footerSvg-light};
@@ -34,8 +42,13 @@ $color-footerSvg-dark: white;
 [data-theme="dark"] {
   --color-heading: #{$color-heading-dark};
   --color-text: #{$color-text-dark};
+
   --color-bg: #{$color-bg-dark};
+
+  --color-navBg: #{$color-navBg-dark};
+
   --card-imageBg: #{$card-imageBg-dark};
+
   --color-footerBg: #{$color-footerBg-dark};
   --color-footerText: #{$color-footerText-dark};
   --color-footerSvg: #{$color-footerSvg-dark};
