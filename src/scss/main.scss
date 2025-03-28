@@ -121,10 +121,17 @@
 
   @include media.respond-md {
     width: 690px;
+    &--intro {
+      margin-top: 60px;
+    }
   }
 
   @include media.respond-lg {
     width: 900px;
+
+    &--intro {
+      margin-top: 0px;
+    }
 
     &--skills {
       display: flex;
